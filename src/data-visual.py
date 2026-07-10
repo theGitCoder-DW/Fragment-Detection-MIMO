@@ -1,10 +1,14 @@
 import numpy as np
 from pathlib import Path
 from matplotlib import pyplot as plt
+from io_data import load_iq
 import sys
 
+data_src_IP1 = Path("/Users/jiteshshetty/FAU_ICT/Sem_5/Fragment-Detection-MIMO/data/MiotyFM_EU1.iq")
+data_src_IP2 = Path("/Users/jiteshshetty/FAU_ICT/Sem_5/Fragment-Detection-MIMO/data/MiotyFM_EU2.iq")
 
-raw = np.fromfile(data_src_IP1, dtype=np.float32)
+
+raw = np.fromfile((data_src_IP1), dtype=np.float32)
 
 print(f"Number of float values: {len(raw)}")
 

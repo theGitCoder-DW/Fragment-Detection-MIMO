@@ -90,3 +90,4 @@ class MiotyMidambleGenerator:
         )
 
         return self.modulate(pilot_bits)
+    
